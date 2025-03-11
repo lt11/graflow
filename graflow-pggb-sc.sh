@@ -5,7 +5,7 @@
 
 ### pggb version
 pggb_version="2024112516190075f7a5"
-# pggb_version="202411012021194f1ba1"
+# pggb_version="202502121042549b672d"
 
 ### with mitochondrial sequence in one haplotype?
 with_mito="FALSE"
@@ -220,43 +220,43 @@ n_threads=44
 # 'YPS128-0-genome.fa.gz' \
 # 'JXXY161-0-genome.fa.gz')
 ### scori
-fagz_files_sorted=('BPK-1 -genome.fa.gz' \ 
-'BPK-2 -genome.fa.gz' \ 
-'AMP_1-0 -genome.fa.gz' \ 
-'CNT-1 -genome.fa.gz' \ 
-'CNT-2 -genome.fa.gz' \ 
-'BFH-1 -genome.fa.gz' \ 
-'BFH-2 -genome.fa.gz' \ 
-'BEM-0 -genome.fa.gz' \ 
-'ALI-1 -genome.fa.gz' \ 
-'ALI-2 -genome.fa.gz' \ 
-'ADE-0 -genome.fa.gz' \ 
-'AAC-1 -genome.fa.gz' \ 
-'AAC-2 -genome.fa.gz' \ 
-'CMF-1 -genome.fa.gz' \ 
-'CMF-2 -genome.fa.gz' \ 
-'DBVPG6044-0 -genome.fa.gz' \ 
-'ANE-0 -genome.fa.gz' \ 
-'BMC_2a-0 -genome.fa.gz' \ 
-'AMM_1a-0 -genome.fa.gz' \ 
-'BAQ_1a-0 -genome.fa.gz' \ 
-'CCN-0 -genome.fa.gz' \ 
-'SX2-0 -genome.fa.gz' \ 
-'AMH_1a-0 -genome.fa.gz' \ 
-'JXXY161-0 -genome.fa.gz' \ 
-'BBF-1 -genome.fa.gz' \ 
-'BBF-2 -genome.fa.gz' \ 
-'AGK-0 -genome.fa.gz' \ 
-'BTE-0 -genome.fa.gz' \ 
-'ADM-1 -genome.fa.gz' \ 
-'ADM-2 -genome.fa.gz' \ 
-'SGDref-0 -genome.fa.gz' \ 
-'CIH-1 -genome.fa.gz' \ 
-'CIH-2 -genome.fa.gz' \ 
-'BDC_1c-0 -genome.fa.gz' \ 
-'CIC-0 -genome.fa.gz' \ 
-'CCQ_1a-0 -genome.fa.gz' \ 
-'BAL_1a-0 -genome.fa.gz' )
+fagz_files_sorted=('BPK-1-genome.fa.gz' \ 
+'BPK-2-genome.fa.gz' \ 
+'AMP_1-0-genome.fa.gz' \ 
+'CNT-1-genome.fa.gz' \ 
+'CNT-2-genome.fa.gz' \ 
+'BFH-1-genome.fa.gz' \ 
+'BFH-2-genome.fa.gz' \ 
+'BEM-0-genome.fa.gz' \ 
+'ALI-1-genome.fa.gz' \ 
+'ALI-2-genome.fa.gz' \ 
+'ADE-0-genome.fa.gz' \ 
+'AAC-1-genome.fa.gz' \ 
+'AAC-2-genome.fa.gz' \ 
+'CMF-1-genome.fa.gz' \ 
+'CMF-2-genome.fa.gz' \ 
+'DBVPG6044-0-genome.fa.gz' \ 
+'ANE-0-genome.fa.gz' \ 
+'BMC_2a-0-genome.fa.gz' \ 
+'AMM_1a-0-genome.fa.gz' \ 
+'BAQ_1a-0-genome.fa.gz' \ 
+'CCN-0-genome.fa.gz' \ 
+'SX2-0-genome.fa.gz' \ 
+'AMH_1a-0-genome.fa.gz' \ 
+'JXXY161-0-genome.fa.gz' \ 
+'BBF-1-genome.fa.gz' \ 
+'BBF-2-genome.fa.gz' \ 
+'AGK-0-genome.fa.gz' \ 
+'BTE-0-genome.fa.gz' \ 
+'ADM-1-genome.fa.gz' \ 
+'ADM-2-genome.fa.gz' \ 
+'SGDref-0-genome.fa.gz' \ 
+'CIH-1-genome.fa.gz' \ 
+'CIH-2-genome.fa.gz' \ 
+'BDC_1c-0-genome.fa.gz' \ 
+'CIC-0-genome.fa.gz' \ 
+'CCQ_1a-0-genome.fa.gz' \ 
+'BAL_1a-0-genome.fa.gz' )
 
 ### the reference for calling built-in variants with vg deconstruct
 ref_hyphen_hap="SGDref-0"
