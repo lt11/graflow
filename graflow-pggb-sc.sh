@@ -4,128 +4,259 @@
 # sudo rm -rf dock-dat
 
 ### pggb version
-# pggb_version="202307130714058eaf35"
-pggb_version="202409162204183c21d2"
+pggb_version="2024112516190075f7a5"
+# pggb_version="202411012021194f1ba1"
+
+### with mitochondrial sequence in one haplotype?
+with_mito="FALSE"
 
 ### general variables
 fasta_rep="${HOME}/data/nano-assemblies-pansn-2024"
 n_threads=44
+# ### sc toy
 # fagz_files_sorted=('SGDref-0-genome.fa.gz' \
 # 'DBVPG6765-0-genome.fa.gz' \
+# 'CMF-1-genome.fa.gz' \
+# 'CMF-2-genome.fa.gz' \
+# 'AAR-0-genome.fa.gz' \
+# 'ABA-0-genome.fa.gz' \
+# 'ABH-0-genome.fa.gz' \
+# 'AMH_1a-0-genome.fa.gz' \
+# 'UWOPS034614-0-genome.fa.gz' \
+# 'S288C-0-genome.fa.gz')
+# ### sc phhd
+# fagz_files_sorted=('SGDref-0-genome.fa.gz' \
+# 'AAB-0-genome.fa.gz' \
 # 'AAC-1-genome.fa.gz' \
 # 'AAC-2-genome.fa.gz' \
 # 'AAR-0-genome.fa.gz' \
 # 'ABA-0-genome.fa.gz' \
 # 'ABH-0-genome.fa.gz' \
+# 'ACH-0-genome.fa.gz' \
+# 'ADE-0-genome.fa.gz' \
+# 'ADI-0-genome.fa.gz' \
+# 'ADM-1-genome.fa.gz' \
+# 'ADM-2-genome.fa.gz' \
+# 'ADQ-0-genome.fa.gz' \
+# 'ADS-0-genome.fa.gz' \
+# 'AEG-0-genome.fa.gz' \
+# 'AEH-0-genome.fa.gz' \
+# 'AEL-1-genome.fa.gz' \
+# 'AEL-2-genome.fa.gz' \
+# 'AFH-0-genome.fa.gz' \
 # 'AFI-0-genome.fa.gz' \
-# 'S288C-0-genome.fa.gz')
-fagz_files_sorted=('SGDref-0-genome.fa.gz' \
-'AAB-0-genome.fa.gz' \
-'AAC-1-genome.fa.gz' \
-'AAC-2-genome.fa.gz' \
-'AAR-0-genome.fa.gz' \
-'ABA-0-genome.fa.gz' \
-'ABH-0-genome.fa.gz' \
-'ACH-0-genome.fa.gz' \
-'ADE-0-genome.fa.gz' \
-'ADI-0-genome.fa.gz' \
-'ADM-1-genome.fa.gz' \
-'ADM-2-genome.fa.gz' \
-'ADQ-0-genome.fa.gz' \
-'ADS-0-genome.fa.gz' \
-'AEG-0-genome.fa.gz' \
-'AEH-0-genome.fa.gz' \
-'AEL-1-genome.fa.gz' \
-'AEL-2-genome.fa.gz' \
-'AFH-0-genome.fa.gz' \
-'AFI-0-genome.fa.gz' \
-'AGA_1a-0-genome.fa.gz' \
-'AGK-0-genome.fa.gz' \
-'AHG-0-genome.fa.gz' \
-'AHL-0-genome.fa.gz' \
-'AIC-0-genome.fa.gz' \
-'AIE-0-genome.fa.gz' \
-'AIF-1-genome.fa.gz' \
-'AIF-2-genome.fa.gz' \
-'AIG-0-genome.fa.gz' \
-'AIS-1-genome.fa.gz' \
-'AIS-2-genome.fa.gz' \
-'AKH_1a-0-genome.fa.gz' \
-'AKR-1-genome.fa.gz' \
-'AKR-2-genome.fa.gz' \
-'ALI-1-genome.fa.gz' \
-'ALI-2-genome.fa.gz' \
-'ALS_1a-0-genome.fa.gz' \
-'AMH_1a-0-genome.fa.gz' \
-'AMM_1a-0-genome.fa.gz' \
-'ANE-0-genome.fa.gz' \
-'APG-0-genome.fa.gz' \
-'ASB-1-genome.fa.gz' \
-'ASB-2-genome.fa.gz' \
-'ASG-0-genome.fa.gz' \
-'ASN-1-genome.fa.gz' \
-'ASN-2-genome.fa.gz' \
-'ATM_1a-0-genome.fa.gz' \
-'AVB-0-genome.fa.gz' \
-'AVI_1a-0-genome.fa.gz' \
-'BAF-1-genome.fa.gz' \
-'BAF-2-genome.fa.gz' \
-'BAG_1a-0-genome.fa.gz' \
-'BAH-0-genome.fa.gz' \
-'BAI_1a-0-genome.fa.gz' \
-'BAK_1a-0-genome.fa.gz' \
-'BAL_1a-0-genome.fa.gz' \
-'BAM-0-genome.fa.gz' \
-'BAP_1a-0-genome.fa.gz' \
-'BAQ_1a-0-genome.fa.gz' \
-'BBF-1-genome.fa.gz' \
-'BBF-2-genome.fa.gz' \
-'BBL-0-genome.fa.gz' \
-'BBM_1a-0-genome.fa.gz' \
-'BCN-0-genome.fa.gz' \
-'BFH-1-genome.fa.gz' \
-'BFH-2-genome.fa.gz' \
-'BFP_1a-0-genome.fa.gz' \
-'BHH-0-genome.fa.gz' \
-'BLD_1a-0-genome.fa.gz' \
-'BMC_2a-0-genome.fa.gz' \
-'BPG-0-genome.fa.gz' \
-'BPK-1-genome.fa.gz' \
-'BPK-2-genome.fa.gz' \
-'CAS_1a-0-genome.fa.gz' \
-'CBM-1-genome.fa.gz' \
-'CBM-2-genome.fa.gz' \
-'CCC_1a-0-genome.fa.gz' \
-'CCQ_1a-0-genome.fa.gz' \
-'CCT_1a-0-genome.fa.gz' \
-'CDA-0-genome.fa.gz' \
-'CDG_1a-0-genome.fa.gz' \
-'CDN_1a-0-genome.fa.gz' \
-'CEI_1a-0-genome.fa.gz' \
-'CEL_1a-0-genome.fa.gz' \
-'CEQ_1a-0-genome.fa.gz' \
-'CFA-0-genome.fa.gz' \
-'CFF-1-genome.fa.gz' \
-'CFF-2-genome.fa.gz' \
-'CIC-1-genome.fa.gz' \
-'CIC-2-genome.fa.gz' \
-'CIH-1-genome.fa.gz' \
-'CIH-2-genome.fa.gz' \
-'CKB-1-genome.fa.gz' \
-'CKB-2-genome.fa.gz' \
-'CLL-1-genome.fa.gz' \
-'CLL-2-genome.fa.gz' \
-'CLN-0-genome.fa.gz' \
-'CMF-1-genome.fa.gz' \
-'CMF-2-genome.fa.gz' \
-'CNT-1-genome.fa.gz' \
-'CNT-2-genome.fa.gz' \
-'CPG_1a-0-genome.fa.gz' \
-'CQS_1a-0-genome.fa.gz' \
-'CRB_1a-0-genome.fa.gz' \
-'DBVPG6044-0-genome.fa.gz' \
-'YPS128-0-genome.fa.gz' \
-'JXXY161-0-genome.fa.gz')
+# 'AGA_1a-0-genome.fa.gz' \
+# 'AGK-0-genome.fa.gz' \
+# 'AHG-0-genome.fa.gz' \
+# 'AHL-0-genome.fa.gz' \
+# 'AIC-0-genome.fa.gz' \
+# 'AIE-0-genome.fa.gz' \
+# 'AIF-1-genome.fa.gz' \
+# 'AIF-2-genome.fa.gz' \
+# 'AIG-0-genome.fa.gz' \
+# 'AIS-1-genome.fa.gz' \
+# 'AIS-2-genome.fa.gz' \
+# 'AKH_1a-0-genome.fa.gz' \
+# 'AKR-1-genome.fa.gz' \
+# 'AKR-2-genome.fa.gz' \
+# 'ALI-1-genome.fa.gz' \
+# 'ALI-2-genome.fa.gz' \
+# 'ALS_1a-0-genome.fa.gz' \
+# 'AMH_1a-0-genome.fa.gz' \
+# 'AMM_1a-0-genome.fa.gz' \
+# 'ANE-0-genome.fa.gz' \
+# 'APG-0-genome.fa.gz' \
+# 'ASB-1-genome.fa.gz' \
+# 'ASB-2-genome.fa.gz' \
+# 'ASG-0-genome.fa.gz' \
+# 'ASN-1-genome.fa.gz' \
+# 'ASN-2-genome.fa.gz' \
+# 'ATM_1a-0-genome.fa.gz' \
+# 'AVB-0-genome.fa.gz' \
+# 'AVI_1a-0-genome.fa.gz' \
+# 'BAF-1-genome.fa.gz' \
+# 'BAF-2-genome.fa.gz' \
+# 'BAG_1a-0-genome.fa.gz' \
+# 'BAH-0-genome.fa.gz' \
+# 'BAI_1a-0-genome.fa.gz' \
+# 'BAK_1a-0-genome.fa.gz' \
+# 'BAL_1a-0-genome.fa.gz' \
+# 'BAM-0-genome.fa.gz' \
+# 'BAP_1a-0-genome.fa.gz' \
+# 'BAQ_1a-0-genome.fa.gz' \
+# 'BBF-1-genome.fa.gz' \
+# 'BBF-2-genome.fa.gz' \
+# 'BBL-0-genome.fa.gz' \
+# 'BBM_1a-0-genome.fa.gz' \
+# 'BCN-0-genome.fa.gz' \
+# 'BFH-1-genome.fa.gz' \
+# 'BFH-2-genome.fa.gz' \
+# 'BFP_1a-0-genome.fa.gz' \
+# 'BHH-0-genome.fa.gz' \
+# 'BLD_1a-0-genome.fa.gz' \
+# 'BMC_2a-0-genome.fa.gz' \
+# 'BPG-0-genome.fa.gz' \
+# 'BPK-1-genome.fa.gz' \
+# 'BPK-2-genome.fa.gz' \
+# 'CAS_1a-0-genome.fa.gz' \
+# 'CBM-1-genome.fa.gz' \
+# 'CBM-2-genome.fa.gz' \
+# 'CCC_1a-0-genome.fa.gz' \
+# 'CCQ_1a-0-genome.fa.gz' \
+# 'CCT_1a-0-genome.fa.gz' \
+# 'CDA-0-genome.fa.gz' \
+# 'CDG_1a-0-genome.fa.gz' \
+# 'CDN_1a-0-genome.fa.gz' \
+# 'CEI_1a-0-genome.fa.gz' \
+# 'CEL_1a-0-genome.fa.gz' \
+# 'CEQ_1a-0-genome.fa.gz' \
+# 'CFA-0-genome.fa.gz' \
+# 'CFF-1-genome.fa.gz' \
+# 'CFF-2-genome.fa.gz' \
+# 'CIC-1-genome.fa.gz' \
+# 'CIC-2-genome.fa.gz' \
+# 'CIH-1-genome.fa.gz' \
+# 'CIH-2-genome.fa.gz' \
+# 'CKB-1-genome.fa.gz' \
+# 'CKB-2-genome.fa.gz' \
+# 'CLL-1-genome.fa.gz' \
+# 'CLL-2-genome.fa.gz' \
+# 'CLN-0-genome.fa.gz' \
+# 'CMF-1-genome.fa.gz' \
+# 'CMF-2-genome.fa.gz' \
+# 'CNT-1-genome.fa.gz' \
+# 'CNT-2-genome.fa.gz' \
+# 'CPG_1a-0-genome.fa.gz' \
+# 'CQS_1a-0-genome.fa.gz' \
+# 'CRB_1a-0-genome.fa.gz' \
+# 'DBVPG6044-0-genome.fa.gz' \
+# 'YPS128-0-genome.fa.gz' \
+# 'JXXY161-0-genome.fa.gz')
+# ### sc hc
+# fagz_files_sorted=('SGDref-0-genome.fa.gz' \
+# 'AAB-0-genome.fa.gz' \
+# 'AAC-0-genome.fa.gz' \
+# 'AAR-0-genome.fa.gz' \
+# 'ABA-0-genome.fa.gz' \
+# 'ABH-0-genome.fa.gz' \
+# 'ACH-0-genome.fa.gz' \
+# 'ADE-0-genome.fa.gz' \
+# 'ADI-0-genome.fa.gz' \
+# 'ADM-0-genome.fa.gz' \
+# 'ADQ-0-genome.fa.gz' \
+# 'ADS-0-genome.fa.gz' \
+# 'AEG-0-genome.fa.gz' \
+# 'AEH-0-genome.fa.gz' \
+# 'AEL-0-genome.fa.gz' \
+# 'AFH-0-genome.fa.gz' \
+# 'AFI-0-genome.fa.gz' \
+# 'AGA_1a-0-genome.fa.gz' \
+# 'AGK-0-genome.fa.gz' \
+# 'AHG-0-genome.fa.gz' \
+# 'AHL-0-genome.fa.gz' \
+# 'AIC-0-genome.fa.gz' \
+# 'AIE-0-genome.fa.gz' \
+# 'AIF-0-genome.fa.gz' \
+# 'AIG-0-genome.fa.gz' \
+# 'AIS-0-genome.fa.gz' \
+# 'AKH_1a-0-genome.fa.gz' \
+# 'AKR-0-genome.fa.gz' \
+# 'ALI-0-genome.fa.gz' \
+# 'ALS_1a-0-genome.fa.gz' \
+# 'AMH_1a-0-genome.fa.gz' \
+# 'AMM_1a-0-genome.fa.gz' \
+# 'ANE-0-genome.fa.gz' \
+# 'APG-0-genome.fa.gz' \
+# 'ASB-0-genome.fa.gz' \
+# 'ASG-0-genome.fa.gz' \
+# 'ASN-0-genome.fa.gz' \
+# 'ATM_1a-0-genome.fa.gz' \
+# 'AVB-0-genome.fa.gz' \
+# 'AVI_1a-0-genome.fa.gz' \
+# 'BAF-0-genome.fa.gz' \
+# 'BAG_1a-0-genome.fa.gz' \
+# 'BAH-0-genome.fa.gz' \
+# 'BAI_1a-0-genome.fa.gz' \
+# 'BAK_1a-0-genome.fa.gz' \
+# 'BAL_1a-0-genome.fa.gz' \
+# 'BAM-0-genome.fa.gz' \
+# 'BAP_1a-0-genome.fa.gz' \
+# 'BAQ_1a-0-genome.fa.gz' \
+# 'BBF-0-genome.fa.gz' \
+# 'BBL-0-genome.fa.gz' \
+# 'BBM_1a-0-genome.fa.gz' \
+# 'BCN-0-genome.fa.gz' \
+# 'BFH-0-genome.fa.gz' \
+# 'BFP_1a-0-genome.fa.gz' \
+# 'BHH-0-genome.fa.gz' \
+# 'BLD_1a-0-genome.fa.gz' \
+# 'BMC_2a-0-genome.fa.gz' \
+# 'BPG-0-genome.fa.gz' \
+# 'BPK-0-genome.fa.gz' \
+# 'CAS_1a-0-genome.fa.gz' \
+# 'CBM-0-genome.fa.gz' \
+# 'CCC_1a-0-genome.fa.gz' \
+# 'CCQ_1a-0-genome.fa.gz' \
+# 'CCT_1a-0-genome.fa.gz' \
+# 'CDA-0-genome.fa.gz' \
+# 'CDG_1a-0-genome.fa.gz' \
+# 'CDN_1a-0-genome.fa.gz' \
+# 'CEI_1a-0-genome.fa.gz' \
+# 'CEL_1a-0-genome.fa.gz' \
+# 'CEQ_1a-0-genome.fa.gz' \
+# 'CFA-0-genome.fa.gz' \
+# 'CFF-0-genome.fa.gz' \
+# 'CIC-0-genome.fa.gz' \
+# 'CIH-0-genome.fa.gz' \
+# 'CKB-0-genome.fa.gz' \
+# 'CLL-0-genome.fa.gz' \
+# 'CLN-0-genome.fa.gz' \
+# 'CMF-0-genome.fa.gz' \
+# 'CNT-0-genome.fa.gz' \
+# 'CPG_1a-0-genome.fa.gz' \
+# 'CQS_1a-0-genome.fa.gz' \
+# 'CRB_1a-0-genome.fa.gz' \
+# 'DBVPG6044-0-genome.fa.gz' \
+# 'YPS128-0-genome.fa.gz' \
+# 'JXXY161-0-genome.fa.gz')
+### scori
+fagz_files_sorted=('BPK-1 -genome.fa.gz' \ 
+'BPK-2 -genome.fa.gz' \ 
+'AMP_1-0 -genome.fa.gz' \ 
+'CNT-1 -genome.fa.gz' \ 
+'CNT-2 -genome.fa.gz' \ 
+'BFH-1 -genome.fa.gz' \ 
+'BFH-2 -genome.fa.gz' \ 
+'BEM-0 -genome.fa.gz' \ 
+'ALI-1 -genome.fa.gz' \ 
+'ALI-2 -genome.fa.gz' \ 
+'ADE-0 -genome.fa.gz' \ 
+'AAC-1 -genome.fa.gz' \ 
+'AAC-2 -genome.fa.gz' \ 
+'CMF-1 -genome.fa.gz' \ 
+'CMF-2 -genome.fa.gz' \ 
+'DBVPG6044-0 -genome.fa.gz' \ 
+'ANE-0 -genome.fa.gz' \ 
+'BMC_2a-0 -genome.fa.gz' \ 
+'AMM_1a-0 -genome.fa.gz' \ 
+'BAQ_1a-0 -genome.fa.gz' \ 
+'CCN-0 -genome.fa.gz' \ 
+'SX2-0 -genome.fa.gz' \ 
+'AMH_1a-0 -genome.fa.gz' \ 
+'JXXY161-0 -genome.fa.gz' \ 
+'BBF-1 -genome.fa.gz' \ 
+'BBF-2 -genome.fa.gz' \ 
+'AGK-0 -genome.fa.gz' \ 
+'BTE-0 -genome.fa.gz' \ 
+'ADM-1 -genome.fa.gz' \ 
+'ADM-2 -genome.fa.gz' \ 
+'SGDref-0 -genome.fa.gz' \ 
+'CIH-1 -genome.fa.gz' \ 
+'CIH-2 -genome.fa.gz' \ 
+'BDC_1c-0 -genome.fa.gz' \ 
+'CIC-0 -genome.fa.gz' \ 
+'CCQ_1a-0 -genome.fa.gz' \ 
+'BAL_1a-0 -genome.fa.gz' )
 
 ### the reference for calling built-in variants with vg deconstruct
 ref_hyphen_hap="SGDref-0"
@@ -222,7 +353,9 @@ for fasta_file in "${fagz_files_sorted[@]}"; do
   mito_path=$(find "${fasta_rep}/" -name "${mito_name}")
   fasta_path=$(find "${fasta_rep}/" -name "${fasta_file}")
   asse_type=$(basename "${fasta_file}" | cut -f 2 -d "-") # e.g. 0 or 1
-  if [[ -f "${mito_path}" ]] && [[ "${asse_type}" != "2" ]]; then
+  if [[ "${with_mito}" == "TRUE" && \
+        -f "${mito_path}" && \
+        "${asse_type}" != "2" ]]; then
     zcat "${fasta_path}" "${mito_path}" > ./nuc-temp.fa
   else
     zcat "${fasta_path}" > ./nuc-temp.fa
@@ -246,7 +379,7 @@ samtools faidx multi.fa.gz
 ### (${USER}/pggb:${pggb_version} is the name given to the image 
 ### by docker build)
 
-### run pggb: for the "locally built" docker: version 202408220711079c2a8b
+### run pggb: for the "locally built" docker: version 2024*
 ref_strain_id=$(echo "${ref_hyphen_hap}" | cut -d "-" -f 1) ### probably to be changed with versions 2024*
 cd "${HOME}/tools/pggb/pggb-${pggb_version}"
 docker run -it -v ${dir_dock}:/data ${USER}/pggb:${pggb_version} \
@@ -265,7 +398,7 @@ cd "${dir_dock}"
 # -k ${match_filt} -P ${poa_param} -O ${poa_pad} \
 # -G ${poa_target_length} -o /data -V ${ref_strain_id}:#
 
-### run pggb: for the "docker pull" version 202307130714058eaf35
+### run pggb: for the "docker pull" version 2023*
 # ref_strain_id=$(echo "${ref_hyphen_hap}" | cut -d "-" -f 1)
 # docker run -it -v ${dir_dock}:/data ghcr.io/pangenome/pggb:${pggb_version} \
 # pggb -i /data/multi.fa.gz -s ${seg_length} \

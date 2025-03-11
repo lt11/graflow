@@ -4,12 +4,16 @@
 # sudo rm -rf dock-dat
 
 ### pggb version
-# pggb_version="202307130714058eaf35"
-pggb_version="202409162204183c21d2"
+pggb_version="2024112516190075f7a5"
+# pggb_version="202411012021194f1ba1"
+
+### with mitochondrial sequence in one haplotype?
+with_mito="FALSE"
 
 ### general variables
 fasta_rep="${HOME}/data/nano-assemblies-pansn-2024"
 n_threads=44
+### scspsj phhd
 fagz_files_sorted=('SGDref-0-genome.fa.gz' \
 'BPK-1-genome.fa.gz' \
 'BPK-2-genome.fa.gz' \
@@ -29,6 +33,22 @@ fagz_files_sorted=('SGDref-0-genome.fa.gz' \
 'UWOPS919171-0-genome.fa.gz' \
 'YPS138-0-genome.fa.gz' \
 'NCYC3947-0-genome.fa.gz')
+# ### scspsj hc
+# fagz_files_sorted=('SGDref-0-genome.fa.gz' \
+# 'BPK-0-genome.fa.gz' \
+# 'AIS-0-genome.fa.gz' \
+# 'AHL-0-genome.fa.gz' \
+# 'BFH-0-genome.fa.gz' \
+# 'CMF-0-genome.fa.gz' \
+# 'BMC_2a-0-genome.fa.gz' \
+# 'AMH_1a-0-genome.fa.gz' \
+# 'JXXY161-0-genome.fa.gz' \
+# 'CBS432-0-genome.fa.gz' \
+# 'N44-0-genome.fa.gz' \
+# 'UFRJ50816-0-genome.fa.gz' \
+# 'UWOPS919171-0-genome.fa.gz' \
+# 'YPS138-0-genome.fa.gz' \
+# 'NCYC3947-0-genome.fa.gz')
 
 ### the reference for calling built-in variants with vg deconstruct
 ref_hyphen_hap="SGDref-0"
@@ -125,7 +145,9 @@ for fasta_file in "${fagz_files_sorted[@]}"; do
   mito_path=$(find "${fasta_rep}/" -name "${mito_name}")
   fasta_path=$(find "${fasta_rep}/" -name "${fasta_file}")
   asse_type=$(basename "${fasta_file}" | cut -f 2 -d "-") # e.g. 0 or 1
-  if [[ -f "${mito_path}" ]] && [[ "${asse_type}" != "2" ]]; then
+  if [[ "${with_mito}" == "TRUE" && \
+        -f "${mito_path}" && \
+        "${asse_type}" != "2" ]]; then
     zcat "${fasta_path}" "${mito_path}" > ./nuc-temp.fa
   else
     zcat "${fasta_path}" > ./nuc-temp.fa
@@ -149,7 +171,7 @@ samtools faidx multi.fa.gz
 ### (${USER}/pggb:${pggb_version} is the name given to the image 
 ### by docker build)
 
-### run pggb: for the "locally built" docker: version 202408220711079c2a8b
+### run pggb: for the "locally built" docker: version 2024*
 ref_strain_id=$(echo "${ref_hyphen_hap}" | cut -d "-" -f 1) ### probably to be changed with versions 2024*
 cd "${HOME}/tools/pggb/pggb-${pggb_version}"
 docker run -it -v ${dir_dock}:/data ${USER}/pggb:${pggb_version} \
@@ -168,7 +190,7 @@ cd "${dir_dock}"
 # -k ${match_filt} -P ${poa_param} -O ${poa_pad} \
 # -G ${poa_target_length} -o /data -V ${ref_strain_id}:#
 
-### run pggb: for the "docker pull" version 202307130714058eaf35
+### run pggb: for the "docker pull" version 2023*
 # ref_strain_id=$(echo "${ref_hyphen_hap}" | cut -d "-" -f 1)
 # docker run -it -v ${dir_dock}:/data ghcr.io/pangenome/pggb:${pggb_version} \
 # pggb -i /data/multi.fa.gz -s ${seg_length} \
