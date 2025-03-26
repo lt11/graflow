@@ -222,7 +222,7 @@ n_threads=44
 ### scori
 fagz_files_sorted=('BPK-1-genome.fa.gz' \ 
 'BPK-2-genome.fa.gz' \ 
-'AMP_1-0-genome.fa.gz' \ 
+'AMP_1a-0-genome.fa.gz' \ 
 'CNT-1-genome.fa.gz' \ 
 'CNT-2-genome.fa.gz' \ 
 'BFH-1-genome.fa.gz' \ 
@@ -256,7 +256,8 @@ fagz_files_sorted=('BPK-1-genome.fa.gz' \
 'BDC_1c-0-genome.fa.gz' \ 
 'CIC-0-genome.fa.gz' \ 
 'CCQ_1a-0-genome.fa.gz' \ 
-'BAL_1a-0-genome.fa.gz' )
+'BAL_1a-0-genome.fa.gz' \ 
+'ADI-0-genome.fa.gz')
 
 ### the reference for calling built-in variants with vg deconstruct
 ref_hyphen_hap="SGDref-0"
@@ -348,6 +349,7 @@ cd "${dir_dock}"
 rm -f all-genomes-ordered.txt
 rm -f multi.fa*
 for fasta_file in "${fagz_files_sorted[@]}"; do
+  echo $fasta_file
   mito_id=$(basename "${fasta_file}" | cut -f 1 -d "-") # e.g. ADE
   mito_name="${mito_id}-mt-genome.fa.gz"
   mito_path=$(find "${fasta_rep}/" -name "${mito_name}")
