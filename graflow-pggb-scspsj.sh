@@ -140,6 +140,8 @@ cd "${dir_dock}"
 rm -f all-genomes-ordered.txt
 rm -f multi.fa*
 for fasta_file in "${fagz_files_sorted[@]}"; do
+  echo "Sequences included:"
+  echo "${fasta_file}"
   mito_id=$(basename "${fasta_file}" | cut -f 1 -d "-") # e.g. ADE
   mito_name="${mito_id}-mt-genome.fa.gz"
   mito_path=$(find "${fasta_rep}/" -name "${mito_name}")
