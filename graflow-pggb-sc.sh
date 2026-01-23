@@ -219,37 +219,90 @@ n_threads=44
 # 'DBVPG6044-0-genome.fa.gz' \
 # 'YPS128-0-genome.fa.gz' \
 # 'JXXY161-0-genome.fa.gz')
-### scori
-fagz_files_sorted=('SGDref-0-genome.fa.gz' \
-'BBL-0-genome.fa.gz' \
-'BBF-1-genome.fa.gz' \
-'BBF-2-genome.fa.gz' \
-'AGK-0-genome.fa.gz' \
-'BTE-0-genome.fa.gz' \
-'ADM-1-genome.fa.gz' \
-'ADM-2-genome.fa.gz' \
-'CIH-1-genome.fa.gz' \
-'CIH-2-genome.fa.gz' \
-'BDC_1c-0-genome.fa.gz' \
-'CIC-0-genome.fa.gz' \
-'CCQ_1a-0-genome.fa.gz' \
-'BPK-1-genome.fa.gz' \
-'BPK-2-genome.fa.gz' \
-'AGA_1a-genome.fa.gz' \
-'BEM-0-genome.fa.gz' \
-'ALI-1-genome.fa.gz' \
-'ALI-2-genome.fa.gz' \
-'ADE-0-genome.fa.gz' \
-'CMF-1-genome.fa.gz' \
-'CMF-2-genome.fa.gz' \
-'BFP_1a-0-genome.fa.gz' \
-'ANE-0-genome.fa.gz' \
-'BMC_2a-0-genome.fa.gz' \
-'BAQ_1a-0-genome.fa.gz' \
-'CCN-0-genome.fa.gz' \
-'SX2-0-genome.fa.gz' \
-'AMH_1a-0-genome.fa.gz' \
-'JXXY161-0-genome.fa.gz')
+# ### scori
+# fagz_files_sorted=('SGDref-0-genome.fa.gz' \
+# 'ADI-0-genome.fa.gz' \
+# 'BBL-0-genome.fa.gz' \
+# 'BBF-1-genome.fa.gz' \
+# 'BBF-2-genome.fa.gz' \
+# 'AGK-0-genome.fa.gz' \
+# 'BTE-0-genome.fa.gz' \
+# 'ADM-1-genome.fa.gz' \
+# 'ADM-2-genome.fa.gz' \
+# 'CIH-1-genome.fa.gz' \
+# 'CIH-2-genome.fa.gz' \
+# 'BDC_1c-0-genome.fa.gz' \
+# 'CIC-0-genome.fa.gz' \
+# 'CCQ_1a-0-genome.fa.gz' \
+# 'BPK-1-genome.fa.gz' \
+# 'BPK-2-genome.fa.gz' \
+# 'AGA_1a-0-genome.fa.gz' \
+# 'BEM-0-genome.fa.gz' \
+# 'ALI-1-genome.fa.gz' \
+# 'ALI-2-genome.fa.gz' \
+# 'ADE-0-genome.fa.gz' \
+# 'CMF-1-genome.fa.gz' \
+# 'CMF-2-genome.fa.gz' \
+# 'BFP_1a-0-genome.fa.gz' \
+# 'ANE-0-genome.fa.gz' \
+# 'BMC_2a-0-genome.fa.gz' \
+# 'BAQ_1a-0-genome.fa.gz' \
+# 'CCN-0-genome.fa.gz' \
+# 'BAG_1a-0-genome.fa.gz' \
+# 'AMH_1a-0-genome.fa.gz' \
+# 'JXXY161-0-genome.fa.gz')
+
+### sc hgt
+fagz_files_sorted=(SGDref-0-genome.fa.gz' \
+AAB-0-genome.fa.gz' \
+AAR-0-genome.fa.gz' \
+AEH-0-genome.fa.gz' \
+AEL-2-genome.fa.gz' \
+AFI-0-genome.fa.gz' \
+AGK-0-genome.fa.gz' \
+AHG-0-genome.fa.gz' \
+AIC-0-genome.fa.gz' \
+AIF-2-genome.fa.gz' \
+AIG-0-genome.fa.gz' \
+ALS_1a-0-genome.fa.gz' \
+ANL-0-genome.fa.gz' \
+ANM-0-genome.fa.gz' \
+APG-0-genome.fa.gz' \
+AQG_2a-0-genome.fa.gz' \
+ASB-2-genome.fa.gz' \
+ASG-0-genome.fa.gz' \
+ASN-1-genome.fa.gz' \
+ATM_1a-0-genome.fa.gz' \
+AVN-0-genome.fa.gz' \
+BBF-1-genome.fa.gz' \
+BBT-0-genome.fa.gz' \
+BCE_3a-0-genome.fa.gz' \
+BDC_1c-0-genome.fa.gz' \
+BDF_1d-0-genome.fa.gz' \
+BDH_1b-0-genome.fa.gz' \
+BDM_1a-0-genome.fa.gz' \
+BFH-2-genome.fa.gz' \
+BGN_3a-0-genome.fa.gz' \
+BLD_1a-0-genome.fa.gz' \
+BPG-0-genome.fa.gz' \
+BPK-1-genome.fa.gz' \
+BPK-2-genome.fa.gz' \
+CAS_1a-0-genome.fa.gz' \
+CEQ_1a-0-genome.fa.gz' \
+CHS_3a-0-genome.fa.gz' \
+CIC-1-genome.fa.gz' \
+CIC-2-genome.fa.gz' \
+CKB-1-genome.fa.gz' \
+CKB-2-genome.fa.gz' \
+CNB_1a-0-genome.fa.gz' \
+CNT-1-genome.fa.gz' \
+CNT-2-genome.fa.gz' \
+CPA_1a-0-genome.fa.gz' \
+CRB_1a-0-genome.fa.gz' \
+CRE-0-genome.fa.gz' \
+CRL-0-genome.fa.gz' \
+DBVPG6765-0-genome.fa.gz' \
+RM11-0-genome.fa.gz')
 
 ### the reference for calling built-in variants with vg deconstruct
 ref_hyphen_hap="SGDref-0"
