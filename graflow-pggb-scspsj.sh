@@ -13,6 +13,9 @@ with_mito="FALSE"
 ### general variables
 fasta_rep="${HOME}/data/nano-assemblies-pansn-2024"
 n_threads=44
+
+## select the strains to include in the pggb graph ----------------------------
+
 ### scspsj phhd
 fagz_files_sorted=('SGDref-0-genome.fa.gz' \
 'BPK-1-genome.fa.gz' \
@@ -33,6 +36,7 @@ fagz_files_sorted=('SGDref-0-genome.fa.gz' \
 'UWOPS919171-0-genome.fa.gz' \
 'YPS138-0-genome.fa.gz' \
 'NCYC3947-0-genome.fa.gz')
+
 # ### scspsj hc
 # fagz_files_sorted=('SGDref-0-genome.fa.gz' \
 # 'BPK-0-genome.fa.gz' \
@@ -49,6 +53,8 @@ fagz_files_sorted=('SGDref-0-genome.fa.gz' \
 # 'UWOPS919171-0-genome.fa.gz' \
 # 'YPS138-0-genome.fa.gz' \
 # 'NCYC3947-0-genome.fa.gz')
+
+## parameters for pggb --------------------------------------------------------
 
 ### the reference for calling built-in variants with vg deconstruct
 ref_hyphen_hap="SGDref-0"
