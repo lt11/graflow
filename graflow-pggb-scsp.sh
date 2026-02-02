@@ -388,7 +388,7 @@ cp "${pggb_graph}" "${dir_gra}/${gfa_graph}"
 vcf_pref=$(echo "${pggb_graph}" | sed 's|.gfa||')
 ### move vcf files to the var folder
 cp "${vcf_pref}.${ref_strain_id}.decomposed.vcf" \
-"${dir_calls}/bin-${ref_hyphen_hap}.vcf"
+"${dir_calls}/bin-${ref_hyphen_hap}-deco.vcf"
 
 ## graph manipulation ---------------------------------------------------------
 
