@@ -139,92 +139,136 @@ n_threads=44
 # 'JXXY161-0-genome.fa.gz' \
 # 'CBS432-0-genome.fa.gz')
 
-### scsp hc
+# ### scsp hc
+# fagz_files_sorted=('SGDref-0-genome.fa.gz' \
+# 'AAB-0-genome.fa.gz' \
+# 'AAC-0-genome.fa.gz' \
+# 'AAR-0-genome.fa.gz' \
+# 'ABA-0-genome.fa.gz' \
+# 'ABH-0-genome.fa.gz' \
+# 'ACH-0-genome.fa.gz' \
+# 'ADE-0-genome.fa.gz' \
+# 'ADI-0-genome.fa.gz' \
+# 'ADM-0-genome.fa.gz' \
+# 'ADQ-0-genome.fa.gz' \
+# 'ADS-0-genome.fa.gz' \
+# 'AEG-0-genome.fa.gz' \
+# 'AEH-0-genome.fa.gz' \
+# 'AEL-0-genome.fa.gz' \
+# 'AFH-0-genome.fa.gz' \
+# 'AFI-0-genome.fa.gz' \
+# 'AGA_1a-0-genome.fa.gz' \
+# 'AGK-0-genome.fa.gz' \
+# 'AHG-0-genome.fa.gz' \
+# 'AHL-0-genome.fa.gz' \
+# 'AIC-0-genome.fa.gz' \
+# 'AIE-0-genome.fa.gz' \
+# 'AIF-0-genome.fa.gz' \
+# 'AIG-0-genome.fa.gz' \
+# 'AIS-0-genome.fa.gz' \
+# 'AKH_1a-0-genome.fa.gz' \
+# 'AKR-0-genome.fa.gz' \
+# 'ALI-0-genome.fa.gz' \
+# 'ALS_1a-0-genome.fa.gz' \
+# 'AMH_1a-0-genome.fa.gz' \
+# 'AMM_1a-0-genome.fa.gz' \
+# 'ANE-0-genome.fa.gz' \
+# 'APG-0-genome.fa.gz' \
+# 'ASB-0-genome.fa.gz' \
+# 'ASG-0-genome.fa.gz' \
+# 'ASN-0-genome.fa.gz' \
+# 'ATM_1a-0-genome.fa.gz' \
+# 'AVB-0-genome.fa.gz' \
+# 'AVI_1a-0-genome.fa.gz' \
+# 'BAF-0-genome.fa.gz' \
+# 'BAG_1a-0-genome.fa.gz' \
+# 'BAH-0-genome.fa.gz' \
+# 'BAI_1a-0-genome.fa.gz' \
+# 'BAK_1a-0-genome.fa.gz' \
+# 'BAL_1a-0-genome.fa.gz' \
+# 'BAM-0-genome.fa.gz' \
+# 'BAP_1a-0-genome.fa.gz' \
+# 'BAQ_1a-0-genome.fa.gz' \
+# 'BBF-0-genome.fa.gz' \
+# 'BBL-0-genome.fa.gz' \
+# 'BBM_1a-0-genome.fa.gz' \
+# 'BCN-0-genome.fa.gz' \
+# 'BFH-0-genome.fa.gz' \
+# 'BFP_1a-0-genome.fa.gz' \
+# 'BHH-0-genome.fa.gz' \
+# 'BLD_1a-0-genome.fa.gz' \
+# 'BMC_2a-0-genome.fa.gz' \
+# 'BPG-0-genome.fa.gz' \
+# 'BPK-0-genome.fa.gz' \
+# 'CAS_1a-0-genome.fa.gz' \
+# 'CBM-0-genome.fa.gz' \
+# 'CCC_1a-0-genome.fa.gz' \
+# 'CCQ_1a-0-genome.fa.gz' \
+# 'CCT_1a-0-genome.fa.gz' \
+# 'CDA-0-genome.fa.gz' \
+# 'CDG_1a-0-genome.fa.gz' \
+# 'CDN_1a-0-genome.fa.gz' \
+# 'CEI_1a-0-genome.fa.gz' \
+# 'CEL_1a-0-genome.fa.gz' \
+# 'CEQ_1a-0-genome.fa.gz' \
+# 'CFA-0-genome.fa.gz' \
+# 'CFF-0-genome.fa.gz' \
+# 'CIC-0-genome.fa.gz' \
+# 'CIH-0-genome.fa.gz' \
+# 'CKB-0-genome.fa.gz' \
+# 'CLL-0-genome.fa.gz' \
+# 'CLN-0-genome.fa.gz' \
+# 'CMF-0-genome.fa.gz' \
+# 'CNT-0-genome.fa.gz' \
+# 'CPG_1a-0-genome.fa.gz' \
+# 'CQS_1a-0-genome.fa.gz' \
+# 'CRB_1a-0-genome.fa.gz' \
+# 'DBVPG6044-0-genome.fa.gz' \
+# 'YPS128-0-genome.fa.gz' \
+# 'JXXY161-0-genome.fa.gz' \
+# 'CBS432-0-genome.fa.gz')
+
+### scori
 fagz_files_sorted=('SGDref-0-genome.fa.gz' \
-'AAB-0-genome.fa.gz' \
-'AAC-0-genome.fa.gz' \
-'AAR-0-genome.fa.gz' \
-'ABA-0-genome.fa.gz' \
-'ABH-0-genome.fa.gz' \
-'ACH-0-genome.fa.gz' \
-'ADE-0-genome.fa.gz' \
-'ADI-0-genome.fa.gz' \
-'ADM-0-genome.fa.gz' \
-'ADQ-0-genome.fa.gz' \
-'ADS-0-genome.fa.gz' \
-'AEG-0-genome.fa.gz' \
-'AEH-0-genome.fa.gz' \
-'AEL-0-genome.fa.gz' \
-'AFH-0-genome.fa.gz' \
-'AFI-0-genome.fa.gz' \
-'AGA_1a-0-genome.fa.gz' \
-'AGK-0-genome.fa.gz' \
-'AHG-0-genome.fa.gz' \
-'AHL-0-genome.fa.gz' \
-'AIC-0-genome.fa.gz' \
-'AIE-0-genome.fa.gz' \
-'AIF-0-genome.fa.gz' \
-'AIG-0-genome.fa.gz' \
-'AIS-0-genome.fa.gz' \
-'AKH_1a-0-genome.fa.gz' \
-'AKR-0-genome.fa.gz' \
-'ALI-0-genome.fa.gz' \
-'ALS_1a-0-genome.fa.gz' \
-'AMH_1a-0-genome.fa.gz' \
 'AMM_1a-0-genome.fa.gz' \
-'ANE-0-genome.fa.gz' \
-'APG-0-genome.fa.gz' \
-'ASB-0-genome.fa.gz' \
-'ASG-0-genome.fa.gz' \
-'ASN-0-genome.fa.gz' \
-'ATM_1a-0-genome.fa.gz' \
-'AVB-0-genome.fa.gz' \
-'AVI_1a-0-genome.fa.gz' \
-'BAF-0-genome.fa.gz' \
-'BAG_1a-0-genome.fa.gz' \
-'BAH-0-genome.fa.gz' \
-'BAI_1a-0-genome.fa.gz' \
-'BAK_1a-0-genome.fa.gz' \
-'BAL_1a-0-genome.fa.gz' \
-'BAM-0-genome.fa.gz' \
-'BAP_1a-0-genome.fa.gz' \
-'BAQ_1a-0-genome.fa.gz' \
-'BBF-0-genome.fa.gz' \
+'ADI-0-genome.fa.gz' \
 'BBL-0-genome.fa.gz' \
-'BBM_1a-0-genome.fa.gz' \
-'BCN-0-genome.fa.gz' \
-'BFH-0-genome.fa.gz' \
-'BFP_1a-0-genome.fa.gz' \
-'BHH-0-genome.fa.gz' \
-'BLD_1a-0-genome.fa.gz' \
-'BMC_2a-0-genome.fa.gz' \
-'BPG-0-genome.fa.gz' \
-'BPK-0-genome.fa.gz' \
-'CAS_1a-0-genome.fa.gz' \
-'CBM-0-genome.fa.gz' \
-'CCC_1a-0-genome.fa.gz' \
-'CCQ_1a-0-genome.fa.gz' \
-'CCT_1a-0-genome.fa.gz' \
-'CDA-0-genome.fa.gz' \
 'CDG_1a-0-genome.fa.gz' \
-'CDN_1a-0-genome.fa.gz' \
-'CEI_1a-0-genome.fa.gz' \
-'CEL_1a-0-genome.fa.gz' \
-'CEQ_1a-0-genome.fa.gz' \
-'CFA-0-genome.fa.gz' \
-'CFF-0-genome.fa.gz' \
+'BBF-1-genome.fa.gz' \
+'BBF-2-genome.fa.gz' \
+'AGK-0-genome.fa.gz' \
+'BTE-0-genome.fa.gz' \
+'ADM-1-genome.fa.gz' \
+'ADM-2-genome.fa.gz' \
+'AKH_1a-0-genome.fa.gz' \
+'BAF-1-genome.fa.gz' \
+'BAF-2-genome.fa.gz' \
+'CIH-1-genome.fa.gz' \
+'CIH-2-genome.fa.gz' \
+'BDC_1c-0-genome.fa.gz' \
 'CIC-0-genome.fa.gz' \
-'CIH-0-genome.fa.gz' \
-'CKB-0-genome.fa.gz' \
-'CLL-0-genome.fa.gz' \
-'CLN-0-genome.fa.gz' \
-'CMF-0-genome.fa.gz' \
-'CNT-0-genome.fa.gz' \
-'CPG_1a-0-genome.fa.gz' \
-'CQS_1a-0-genome.fa.gz' \
-'CRB_1a-0-genome.fa.gz' \
-'DBVPG6044-0-genome.fa.gz' \
-'YPS128-0-genome.fa.gz' \
+'ABH-0-genome.fa.gz' \
+'AEL-1-genome.fa.gz' \
+'AEL-2-genome.fa.gz' \
+'CCQ_1a-0-genome.fa.gz' \
+'BPK-1-genome.fa.gz' \
+'BPK-2-genome.fa.gz' \
+'AGA_1a-0-genome.fa.gz' \
+'BEM-0-genome.fa.gz' \
+'BDN_1c-0-genome.fa.gz' \
+'ALI-1-genome.fa.gz' \
+'ALI-2-genome.fa.gz' \
+'ADE-0-genome.fa.gz' \
+'CMF-1-genome.fa.gz' \
+'CMF-2-genome.fa.gz' \
+'CDA-0-genome.fa.gz' \
+'BFP_1a-0-genome.fa.gz' \
+'ANE-0-genome.fa.gz' \
+'BMC_2a-0-genome.fa.gz' \
+'BAQ_1a-0-genome.fa.gz' \
+'BAK_1a-0-genome.fa.gz' \
+'BAG_1a-0-genome.fa.gz' \
+'AMH_1a-0-genome.fa.gz' \
 'JXXY161-0-genome.fa.gz' \
 'CBS432-0-genome.fa.gz')
 
@@ -254,7 +298,7 @@ gfa_graph="gr-final.gfa"
 # shortreads_dir="${shared_dir}/phenovar-reads/short"
 sr_ext="fq.gz"
 
-pair_div=95
+pair_div=90
 match_filt=47
 poa_param="asm5"
 poa_target_length=700,900,1100
