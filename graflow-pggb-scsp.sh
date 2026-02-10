@@ -230,6 +230,10 @@ n_threads=44
 
 ### scori
 fagz_files_sorted=('SGDref-0-genome.fa.gz' \
+'CPG_1a-0-genome.fa.gz' \
+'AHL-0-genome.fa.gz' \
+'AVB-0-genome.fa.gz' \
+'AIE-0-genome.fa.gz' \
 'AMM_1a-0-genome.fa.gz' \
 'ADI-0-genome.fa.gz' \
 'BBL-0-genome.fa.gz' \
