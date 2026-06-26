@@ -272,6 +272,8 @@ fagz_files_sorted=('SGDref-0-genome.fa.gz' \
 'BAQ_1a-0-genome.fa.gz' \
 'BAK_1a-0-genome.fa.gz' \
 'BAG_1a-0-genome.fa.gz' \
+'CDN_1a-0-genome.fa.gz' \
+'CCC_1a-0-genome.fa.gz' \
 'AMH_1a-0-genome.fa.gz' \
 'JXXY161-0-genome.fa.gz' \
 'CBS432-0-genome.fa.gz')
