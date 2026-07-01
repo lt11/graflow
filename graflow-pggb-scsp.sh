@@ -29,6 +29,21 @@ n_threads=44
 # 'S288C-0-genome.fa.gz' \
 # 'CBS432-0-genome.fa.gz')
 
+### scsp 12+1 strains (+1 is the reference)
+fagz_files_sorted=('SGDref-0-genome.fa.gz' \
+'DBVPG6765-0-genome.fa.gz' \
+'SK1-0-genome.fa.gz' \
+'YPS128-0-genome.fa.gz' \
+'DBVPG6044-0-genome.fa.gz' \
+'Y12-0-genome.fa.gz' \
+'UWOPS034614-0-genome.fa.gz' \
+'S288C-0-genome.fa.gz' \
+'YPS138-0-genome.fa.gz' \
+'UFRJ50816-0-genome.fa.gz' \
+'UWOPS919171-0-genome.fa.gz' \
+'N44-0-genome.fa.gz' \
+'CBS432-0-genome.fa.gz')
+
 # ### scsp phhd
 # fagz_files_sorted=('SGDref-0-genome.fa.gz' \
 # 'AAB-0-genome.fa.gz' \
