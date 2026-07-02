@@ -319,7 +319,7 @@ gfa_graph="gr-final.gfa"
 # shortreads_dir="${shared_dir}/phenovar-reads/short"
 sr_ext="fq.gz"
 
-pair_div=85
+pair_sim=85
 match_filt=17
 poa_param="asm20"
 poa_target_length=700,900,1100
@@ -423,7 +423,7 @@ ref_strain_id=$(echo "${ref_hyphen_hap}" | cut -d "-" -f 1) ### probably to be c
 cd "${HOME}/tools/pggb/pggb-${pggb_version}"
 docker run -it -v ${dir_dock}:/data ${USER}/pggb:${pggb_version} \
 pggb -i /data/multi.fa.gz -s ${seg_length} \
--p ${pair_div} -n ${n_aps} -t ${n_threads} \
+-p ${pair_sim} -n ${n_aps} -t ${n_threads} \
 -k ${match_filt} -P ${poa_param} -O ${poa_pad} \
 -G ${poa_target_length} -o /data -V ${ref_strain_id}:${max_decomp}
 cd "${dir_dock}"
@@ -433,7 +433,7 @@ cd "${dir_dock}"
 # cd "${HOME}/tools/pggb/pggb-${pggb_version}"
 # docker run -it -v ${dir_dock}:/data ${USER}/pggb:${pggb_version} \
 # pggb -i /data/multi.fa.gz -s ${seg_length} \
-# -p ${pair_div} -n ${n_aps} -t ${n_threads} \
+# -p ${pair_sim} -n ${n_aps} -t ${n_threads} \
 # -k ${match_filt} -P ${poa_param} -O ${poa_pad} \
 # -G ${poa_target_length} -o /data -V ${ref_strain_id}:#
 
@@ -441,7 +441,7 @@ cd "${dir_dock}"
 # ref_strain_id=$(echo "${ref_hyphen_hap}" | cut -d "-" -f 1)
 # docker run -it -v ${dir_dock}:/data ghcr.io/pangenome/pggb:${pggb_version} \
 # pggb -i /data/multi.fa.gz -s ${seg_length} \
-# -p ${pair_div} -n ${n_aps} -t ${n_threads} \
+# -p ${pair_sim} -n ${n_aps} -t ${n_threads} \
 # -k ${match_filt} -P ${poa_param} -O ${poa_pad} \
 # -G ${poa_target_length} -o /data -V ${ref_strain_id}:#
 
