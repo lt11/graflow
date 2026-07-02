@@ -320,7 +320,7 @@ gfa_graph="gr-final.gfa"
 sr_ext="fq.gz"
 
 pair_div=85
-match_filt=23
+match_filt=17
 poa_param="asm20"
 poa_target_length=700,900,1100
 poa_pad=0.001
