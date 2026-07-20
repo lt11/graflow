@@ -16,6 +16,11 @@ n_threads=44
 
 ## select the strains to include in the pggb graph ----------------------------
 
+### sc structural variants toy
+fagz_files_sorted=('SGDref-0-genome.fa.gz' \
+'TOY288-0-genome.fa.gz' \
+'S288C-0-genome.fa.gz')
+
 # ### sc toy
 # fagz_files_sorted=('SGDref-0-genome.fa.gz' \
 # 'DBVPG6765-0-genome.fa.gz' \
@@ -225,54 +230,54 @@ n_threads=44
 # 'YPS128-0-genome.fa.gz' \
 # 'JXXY161-0-genome.fa.gz')
 
-### scori
-fagz_files_sorted=('SGDref-0-genome.fa.gz' \
-'CPG_1a-0-genome.fa.gz' \
-'AHL-0-genome.fa.gz' \
-'AVB-0-genome.fa.gz' \
-'AIE-0-genome.fa.gz' \
-'AMM_1a-0-genome.fa.gz' \
-'ADI-0-genome.fa.gz' \
-'BBL-0-genome.fa.gz' \
-'CDG_1a-0-genome.fa.gz' \
-'BBF-1-genome.fa.gz' \
-'BBF-2-genome.fa.gz' \
-'AGK-0-genome.fa.gz' \
-'BTE-0-genome.fa.gz' \
-'ADM-1-genome.fa.gz' \
-'ADM-2-genome.fa.gz' \
-'AKH_1a-0-genome.fa.gz' \
-'BAF-1-genome.fa.gz' \
-'BAF-2-genome.fa.gz' \
-'CIH-1-genome.fa.gz' \
-'CIH-2-genome.fa.gz' \
-'BDC_1c-0-genome.fa.gz' \
-'CIC-0-genome.fa.gz' \
-'ABH-0-genome.fa.gz' \
-'AEL-1-genome.fa.gz' \
-'AEL-2-genome.fa.gz' \
-'CCQ_1a-0-genome.fa.gz' \
-'BPK-1-genome.fa.gz' \
-'BPK-2-genome.fa.gz' \
-'AGA_1a-0-genome.fa.gz' \
-'BEM-0-genome.fa.gz' \
-'BDN_1c-0-genome.fa.gz' \
-'ALI-1-genome.fa.gz' \
-'ALI-2-genome.fa.gz' \
-'ADE-0-genome.fa.gz' \
-'CMF-1-genome.fa.gz' \
-'CMF-2-genome.fa.gz' \
-'CDA-0-genome.fa.gz' \
-'BFP_1a-0-genome.fa.gz' \
-'ANE-0-genome.fa.gz' \
-'BMC_2a-0-genome.fa.gz' \
-'BAQ_1a-0-genome.fa.gz' \
-'BAK_1a-0-genome.fa.gz' \
-'BAG_1a-0-genome.fa.gz' \
-'CDN_1a-0-genome.fa.gz' \
-'CCC_1a-0-genome.fa.gz' \
-'AMH_1a-0-genome.fa.gz' \
-'JXXY161-0-genome.fa.gz')
+# ### scori
+# fagz_files_sorted=('SGDref-0-genome.fa.gz' \
+# 'CPG_1a-0-genome.fa.gz' \
+# 'AHL-0-genome.fa.gz' \
+# 'AVB-0-genome.fa.gz' \
+# 'AIE-0-genome.fa.gz' \
+# 'AMM_1a-0-genome.fa.gz' \
+# 'ADI-0-genome.fa.gz' \
+# 'BBL-0-genome.fa.gz' \
+# 'CDG_1a-0-genome.fa.gz' \
+# 'BBF-1-genome.fa.gz' \
+# 'BBF-2-genome.fa.gz' \
+# 'AGK-0-genome.fa.gz' \
+# 'BTE-0-genome.fa.gz' \
+# 'ADM-1-genome.fa.gz' \
+# 'ADM-2-genome.fa.gz' \
+# 'AKH_1a-0-genome.fa.gz' \
+# 'BAF-1-genome.fa.gz' \
+# 'BAF-2-genome.fa.gz' \
+# 'CIH-1-genome.fa.gz' \
+# 'CIH-2-genome.fa.gz' \
+# 'BDC_1c-0-genome.fa.gz' \
+# 'CIC-0-genome.fa.gz' \
+# 'ABH-0-genome.fa.gz' \
+# 'AEL-1-genome.fa.gz' \
+# 'AEL-2-genome.fa.gz' \
+# 'CCQ_1a-0-genome.fa.gz' \
+# 'BPK-1-genome.fa.gz' \
+# 'BPK-2-genome.fa.gz' \
+# 'AGA_1a-0-genome.fa.gz' \
+# 'BEM-0-genome.fa.gz' \
+# 'BDN_1c-0-genome.fa.gz' \
+# 'ALI-1-genome.fa.gz' \
+# 'ALI-2-genome.fa.gz' \
+# 'ADE-0-genome.fa.gz' \
+# 'CMF-1-genome.fa.gz' \
+# 'CMF-2-genome.fa.gz' \
+# 'CDA-0-genome.fa.gz' \
+# 'BFP_1a-0-genome.fa.gz' \
+# 'ANE-0-genome.fa.gz' \
+# 'BMC_2a-0-genome.fa.gz' \
+# 'BAQ_1a-0-genome.fa.gz' \
+# 'BAK_1a-0-genome.fa.gz' \
+# 'BAG_1a-0-genome.fa.gz' \
+# 'CDN_1a-0-genome.fa.gz' \
+# 'CCC_1a-0-genome.fa.gz' \
+# 'AMH_1a-0-genome.fa.gz' \
+# 'JXXY161-0-genome.fa.gz')
 
 ### sc hgt
 # fagz_files_sorted=('SGDref-0-genome.fa.gz' \
