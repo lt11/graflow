@@ -137,7 +137,7 @@ while true ; do
         -K|--mash-kmer) mash_kmer=$2 ; shift 2 ;;
         -F|--mash-kmer-thres) mash_kmer_thres=$2 ; shift 2 ;;
         --mash-nmap-short-seq) mash_nmap_short_seq=$2 ; shift 2 ;;
-	-Y|--exclude-delim) exclude_delim=$2 ; shift 2 ;;
+	      -Y|--exclude-delim) exclude_delim=$2 ; shift 2 ;;
         -k|--min-match-length) min_match_length=$2 ; shift 2 ;;
         -f|--sparse-factor) sparse_factor=$2 ; shift 2 ;;
         -B|--transclose-batch) transclose_batch=$(parse_numeric $2) ; shift 2 ;;
@@ -568,7 +568,7 @@ if [[ "$input_paf" == false ]]; then
           -p $map_pct_id \
           -n $n_mappings \
           -S $mash_nmap_short_seq \
-	  $split_cmd \
+	        $split_cmd \
           $sparse_map_cmd \
           -k $mash_kmer \
           -H $mash_kmer_thres \
@@ -589,7 +589,7 @@ if [[ "$input_paf" == false ]]; then
         -p $map_pct_id \
         -n $n_mappings \
         -S $mash_nmap_short_seq \
-	$split_cmd \
+	      $split_cmd \
         $sparse_map_cmd \
         -k $mash_kmer \
         -H $mash_kmer_thres \
